@@ -2,15 +2,15 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
+    "moduleResolution": "node",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "incremental": true,
-    "tsBuildInfoFile": "./.tsbuildcache/tsconfig.node.tsbuildinfo"
+    "tsBuildInfoFile": "./.tsbuildcache/tsconfig.node.tsbuildinfo",
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
   "include": ["vite.config.ts"]
 }
