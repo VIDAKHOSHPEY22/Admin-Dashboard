@@ -3,9 +3,9 @@ const cors = require('cors');
 
 const app = express();
 
-// ⚠️ فعال‌سازی CORS با تنظیم درست:
+// فعال‌سازی CORS
 app.use(cors({
-  origin: 'http://localhost:5173', // فرانت‌اند React
+  origin: 'http://localhost:5173',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
@@ -26,5 +26,5 @@ app.post('/api/login', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+  console.log('✅ Server running on http://localhost:3000');
 });
